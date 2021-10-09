@@ -13,6 +13,9 @@
 		84501ECE270B9CF0004744A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84501ECD270B9CF0004744A6 /* Preview Assets.xcassets */; };
 		84501ED9270B9CF0004744A6 /* CustomHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84501ED8270B9CF0004744A6 /* CustomHomeTests.swift */; };
 		84501EE4270B9CF0004744A6 /* CustomHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84501EE3270B9CF0004744A6 /* CustomHomeUITests.swift */; };
+		8491119E2711CC0F0029BA90 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491119D2711CC0F0029BA90 /* Device.swift */; };
+		849111A32711DAE60029BA90 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849111A22711DAE60029BA90 /* Shared.swift */; };
+		84E0E20C270F48C300D53AA9 /* NewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0E20B270F48C300D53AA9 /* NewDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		84501EDF270B9CF0004744A6 /* CustomHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84501EE3270B9CF0004744A6 /* CustomHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeUITests.swift; sourceTree = "<group>"; };
 		84501EE5270B9CF0004744A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8491119D2711CC0F0029BA90 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		849111A22711DAE60029BA90 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		84E0E20B270F48C300D53AA9 /* NewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			children = (
 				84501EC6270B9CEF004744A6 /* CustomHomeApp.swift */,
 				84501EC8270B9CEF004744A6 /* ContentView.swift */,
+				84E0E20B270F48C300D53AA9 /* NewDeviceView.swift */,
+				849111A22711DAE60029BA90 /* Shared.swift */,
+				8491119D2711CC0F0029BA90 /* Device.swift */,
 				84501ECA270B9CF0004744A6 /* Assets.xcassets */,
 				84501ECF270B9CF0004744A6 /* Info.plist */,
 				84501ECC270B9CF0004744A6 /* Preview Content */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849111A32711DAE60029BA90 /* Shared.swift in Sources */,
 				84501EC9270B9CEF004744A6 /* ContentView.swift in Sources */,
+				84E0E20C270F48C300D53AA9 /* NewDeviceView.swift in Sources */,
 				84501EC7270B9CEF004744A6 /* CustomHomeApp.swift in Sources */,
+				8491119E2711CC0F0029BA90 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
