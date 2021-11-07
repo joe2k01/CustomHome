@@ -7,10 +7,42 @@
 
 import SwiftUI
 
+//private var devices: [Device] = retrieveDevicesList()
+
+class DevicesViewModel: ObservableObject {
+    @Published var devices = retrieveDevicesList()
+    
+    func reload() {
+        devices = retrieveDevicesList()
+        print(devices)
+    }
+}
+
 struct ContentView: View {
+    @ObservedObject var devicesViewModel = DevicesViewModel()
+    @State private var addingDevice = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            if(devicesViewModel.devices.count > 0) {
+                List{
+                    ForEach(devicesViewModel.devices) { device in
+                        Text(device.name)
+                    }
+                }.onAppear {
+                    devicesViewModel.reload()
+                    print(devicesViewModel.devices)
+                }
+            }
+            Button("Add new device") {
+                addingDevice.toggle()
+            }.sheet(isPresented: $addingDevice) {
+                NewDeviceView().onDisappear {
+                    devicesViewModel.reload()
+                }
+            }
+        }.buttonStyle(GradientButtonStyle())
+        .frame(alignment: .bottom)
     }
 }
 

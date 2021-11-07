@@ -12,3 +12,7 @@ struct Device: Codable {
     var IPAddress: String = ""
     var type: Int = -1
 }
+
+extension Device: Identifiable {
+    var id: String{ return name }
+}
